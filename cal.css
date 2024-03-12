@@ -1,0 +1,64 @@
+
+*, *::before,*::after{
+    box-sizing:border-box;
+    font-family:Gotham Rounded,sans-serif;
+    font-weight:normal;
+}
+
+body{
+    padding:0;
+    margin:0;
+    background-color:black;
+
+}
+.outer{
+    height:90vh;
+    width:70%;
+    background:linear-gradient(to right,rgb(132, 132, 244),purple);
+    margin-left:15%;
+    margin-top:2%;
+    border-radius:3%;
+}
+.cal{
+    display:grid;
+    border-radius:35%;
+    justify-content:center;
+    align-content:center;
+    height:90vh;
+    grid-template-columns:repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.cal > button{
+    cursor: pointer;
+    font-size:2rem;
+    border:1px solid white;
+    outline: none;
+    background-color: rgba(255,255,255,.75);
+
+}
+.cal > button:hover{
+    background:linear-gradient(to left,purple,pink);
+    text-shadow:2px 2px;
+    box-shadow: 0 8px 16px 0 rgba(232, 26, 26, 0.2), 0 6px 20px 0 rgba(210, 247, 64, 0.19);
+    cursor:-moz-zoom-in;
+
+}
+
+.span-two{
+    grid-column:span 2;
+
+}
+textarea {
+    grid-column: span 4;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-align: end;
+    padding: 15px;
+    border:1px solid white;
+    background-color: rgba(255,255,255,.75);
+  }
+  
+
+.heading:hover{
+    cursor:pointer;
+}
