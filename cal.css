@@ -62,3 +62,13 @@ textarea {
 .heading:hover{
     cursor:pointer;
 }
+@media (max-width: 600px) {
+    .cal,.outer{
+        width: 80%;
+    }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cal,.outer{
+        width: 60%;
+    }
+}
